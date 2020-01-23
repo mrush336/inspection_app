@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
-import Inspection from "./components/Inspection";
+import BrakesInspection from "./components/BrakesInspection";
 import LoginControl from "./components/login/LoginControl";
 import "./App.css";
 
 class App extends Component {
   state = {
-    inspections: [
+    brakes: [
       { id: 1, name: "Service Brakes", pass: false },
       { id: 2, name: "Parking Brakes", pass: false },
       { id: 3, name: "Brake Drums or Rotors", pass: false },
@@ -18,7 +18,7 @@ class App extends Component {
       { id: 9, name: "Electric Brakes", pass: false },
       { id: 10, name: "Hydraulic Brakes", pass: false },
       { id: 11, name: "Vacuum Brakes", pass: false },
-      { id: 12, name: "Anitlock Brakes", pass: false },
+      { id: 12, name: "Antilock Brakes", pass: false },
       { id: 13, name: "Automatic Brake Adjusters", pass: false }
     ]
   };
@@ -27,9 +27,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <LoginControl />
-        <Inspection
-          inspections={this.state.inspections}
-          key={this.state.inspections.id}
+        <BrakesInspection
+          brakes={this.state.brakes}
+          key={this.state.brakes.id}
         />
       </div>
     );
