@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class InspectionItem extends Component {
+export class BrakesInspectionItem extends Component {
   state = {
     divStyle: {
       backgroundColor: "#ffffff"
@@ -20,6 +20,13 @@ export class InspectionItem extends Component {
       }
     });
   };
+  handleClickNA = () => {
+    this.setState({
+      divStyle: {
+        backgroundColor: "#ffff00"
+      }
+    });
+  };
   render() {
     const { divStyle } = this.state;
     return (
@@ -31,10 +38,12 @@ export class InspectionItem extends Component {
         <button onClick={this.handleClickPass} style={buttonStylePass}>
           -PASS-
         </button>{" "}
+        <button onClick={this.handleClickNA} style={buttonStyleNA}>
+          Not Applicable
+        </button>
         <button onClick={this.handleClickFail} style={buttonStyleFail}>
           x-Fail-x
         </button>
-        <button style={buttonStyleNA}>Not Applicable</button>
       </div>
     );
   }
@@ -58,4 +67,4 @@ const buttonStyleNA = {
   fontSize: "20px"
 };
 
-export default InspectionItem;
+export default BrakesInspectionItem;
