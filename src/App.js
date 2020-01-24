@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import BrakesInspection from "./components/brakes/BrakesInspection";
-import LoginControl from "./components/login/LoginControl";
 import "./App.css";
+import Header from "./Header";
+import LoginControl from "./components/login/LoginControl";
+import BrakesInspection from "./components/brakes/BrakesInspection";
+import CouplingInspection from "./components/coupling/CouplingInspection";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
         <LoginControl />
         <BrakesInspection />
+        <CouplingInspection />
       </div>
     );
   }
