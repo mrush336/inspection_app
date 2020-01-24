@@ -2,15 +2,17 @@ import React from "react";
 
 function Header() {
   return (
-    <header style={headerStyle}>
-      <h1>DOT Inspection Procedures</h1>
+    <header style={mainHeaderStyle}>
+      <h1>DOT INSPECTION PROCEDURES</h1>
     </header>
   );
 }
 
-const headerStyle = {
+const mainHeaderStyle = {
   background: "#99ccff",
-  fontSize: "24px"
+  fontSize: "24px",
+  color: "#000066",
+  textShadow: "2px 2px #ff0000"
 };
 
 export default Header;

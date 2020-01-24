@@ -36,25 +36,25 @@ state = {
     {id: 18, name: 'Safety Devices', pass: false},
     {id: 19, name: 'Saddle Mounts', pass: false},
   ],
-  exhaust_system: [
+  exhaust: [
     {id: 20, name: 'Leaking Forward/Below Cabin', pass: false},
     {id: 21, name: 'Bus Exhaust Leaking', pass: false},
     {id: 22, name: 'Exhaust Burning/Charing', pass: false},
   ],
-  fuel_system: [
+  fuel: [
     {id: 23, name: 'Visible Leak', pass: false},
     {id: 24, name: 'Filler Cap', pass: false},
     {id: 25, name: 'Tank Securely Attached', pass: false},
   ],
-  lighting_devices: [
+  lighting: [
     {id: 26, name: 'All Lighting Devices', pass: false},
   ],
-  safe_loading: [
+  loading: [
     {id: 27, name: 'Load/Dunnage Falling', pass: false},
     {id: 28, name: 'Cargo Shifting', pass: false},
     {id: 29, name: 'Container Securement', pass: false},
   ],
-  steering_mechanism: [
+  steering: [
     {id: 30, name: 'Steering Wheel Freeplay', pass: false},
     {id: 31, name: 'Steering Column', pass: false},
     {id: 32, name: 'Axle Beam/Components', pass: false},
@@ -87,10 +87,10 @@ state = {
     {id: 51, name: 'Fasteners', pass: false},
     {id: 52, name: 'Welds', pass: false},
   ],
-  windshield_glazing: [
+  windshield: [
     {id: 53, name: 'Vision Reducing Matter', pass: false},
   ],
-  windshield_wipers: [
+  wipers: [
     {id: 54, name: 'Inoperative Wiper', pass: false},
   ],
   seats: [
