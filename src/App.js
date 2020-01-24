@@ -10,6 +10,12 @@ import ExhaustHeader from "./components/exhaust/ExhaustHeader";
 import ExhaustInspection from "./components/exhaust/ExhaustInspection";
 import FuelHeader from "./components/fuel/FuelHeader";
 import FuelInspection from "./components/fuel/FuelInspection";
+import LightingHeader from "./components/lighting/LightingHeader";
+import LightingInspection from "./components/lighting/LightingInspection";
+import LoadingHeader from "./components/loading/LoadingHeader";
+import LoadingInspection from "./components/loading/LoadingInspection";
+import SteeringHeader from "./components/steering/SteeringHeader";
+import SteeringInspection from "./components/steering/SteeringInspection";
 
 class App extends Component {
   render() {
@@ -25,6 +31,12 @@ class App extends Component {
         <ExhaustInspection />
         <FuelHeader />
         <FuelInspection />
+        <LightingHeader />
+        <LightingInspection />
+        <LoadingHeader />
+        <LoadingInspection />
+        <SteeringHeader />
+        <SteeringInspection />
       </div>
     );
   }
