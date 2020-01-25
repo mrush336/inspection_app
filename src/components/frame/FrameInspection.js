@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FrameInspectionItem from "./FrameInspectionItem";
 
 export class FrameInspection extends Component {
   state = {

@@ -81,7 +81,7 @@ state = {
     {id: 47, name: 'Other Tires', pass: false},
     {id: 48, name: 'Speed Restricted Tires', pass: false},
   ],
-  wheels_rims: [
+  wheels: [
     {id: 49, name: 'Lock/Side Ring', pass: false},
     {id: 50, name: 'Wheels/Rims', pass: false},
     {id: 51, name: 'Fasteners', pass: false},

@@ -7,7 +7,7 @@ export class LightingInspection extends Component {
   };
   render() {
     return this.state.lighting.map(item => (
-      <lightingInspectionItem item={item} key={item.id} />
+      <LightingInspectionItem item={item} key={item.id} />
     ));
   }
 }
