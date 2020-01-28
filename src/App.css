@@ -1,3 +1,7 @@
+body {
+  background-color: slategrey;
+}
+
 .App {
   text-align: center;
   width: 80%;
@@ -14,6 +18,7 @@ button {
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
+  border-radius: 4px;
 }
 
 h2 {
@@ -22,10 +27,26 @@ h2 {
   margin-right: 20%;
 }
 
-.pass {
-  background-color: #00ff00;
+form {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.fail {
-  background-color: #ff0000;
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid black;
+  font-size: large;
+}
+
+input:focus {
+  background-color: lightgray;
+}
+
+label {
+  color: black;
+  text-decoration: underline;
+  font-size: large;
+  font-weight: 600;
 }
