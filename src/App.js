@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./Header";
-import LoginControl from "./components/login/LoginControl";
+import FormHeader from "./components/form/FormHeader";
+import FormTruckComponents from "./components/form/FormTruckComponents";
+//import LoginControl from "./components/login/LoginControl";
 import BrakesHeader from "./components/brakes/BrakesHeader";
 import BrakesInspection from "./components/brakes/BrakesInspection";
 import CouplingHeader from "./components/coupling/CouplingHeader";
@@ -36,7 +38,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <LoginControl />
+        <FormHeader />
+        <FormTruckComponents />
         <BrakesHeader />
         <BrakesInspection />
         <CouplingHeader />
