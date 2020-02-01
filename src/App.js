@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import * as firebase from "firebase/app";
+import "firebase/firestore";
 import "./App.css";
 import Header from "./Header";
 import FormHeader from "./components/form/FormHeader";
