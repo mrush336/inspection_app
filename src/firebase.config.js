@@ -1,3 +1,6 @@
+import * as firebase from "firebase/app";
+import "firebase/firestore";
+
 // Set the configuration for your app
 // TODO: Replace with your project's config object
 var config = {

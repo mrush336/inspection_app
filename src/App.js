@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import * as firebase from "firebase/app";
-import "firebase/firestore";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import "./App.css";
+
 import Header from "./Header";
 import FormHeader from "./components/form/FormHeader";
 import FormTruckComponents from "./components/form/FormTruckComponents";
@@ -39,37 +41,83 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <FormHeader />
-        <FormTruckComponents />
-        <BrakesHeader />
-        <BrakesInspection />
-        <CouplingHeader />
-        <CouplingInspection />
-        <ExhaustHeader />
-        <ExhaustInspection />
-        <FuelHeader />
-        <FuelInspection />
-        <LightingHeader />
-        <LightingInspection />
-        <LoadingHeader />
-        <LoadingInspection />
-        <SteeringHeader />
-        <SteeringInspection />
-        <SuspensionHeader />
-        <SuspensionInspection />
-        <FrameHeader />
-        <FrameInspection />
-        <TiresHeader />
-        <TiresInspection />
-        <WheelsHeader />
-        <WheelsInspection />
-        <WindshieldHeader />
-        <WindshieldInspection />
-        <WipersHeader />
-        <WipersInspection />
-        <SeatsHeader />
-        <SeatsInspection />
+        <Router>
+          <Route path="/">
+            <Header />
+            <FormHeader />
+            <FormTruckComponents />
+          </Route>
+
+          <Route path="/brakes">
+            <BrakesHeader />
+            <BrakesInspection />
+          </Route>
+
+          <Route path="/coupling">
+            <CouplingHeader />
+            <CouplingInspection />
+          </Route>
+
+          <Route path="/exhaust">
+            <ExhaustHeader />
+            <ExhaustInspection />
+          </Route>
+
+          <Route path="/fuel">
+            <FuelHeader />
+            <FuelInspection />
+          </Route>
+
+          <Route path="/lighting">
+            <LightingHeader />
+            <LightingInspection />
+          </Route>
+
+          <Route path="/loading">
+            <LoadingHeader />
+            <LoadingInspection />
+          </Route>
+
+          <Route path="/steering">
+            <SteeringHeader />
+            <SteeringInspection />
+          </Route>
+
+          <Route path="/suspension">
+            <SuspensionHeader />
+            <SuspensionInspection />
+          </Route>
+
+          <Route path="/frame">
+            <FrameHeader />
+            <FrameInspection />
+          </Route>
+
+          <Route path="/tires">
+            <TiresHeader />
+            <TiresInspection />
+          </Route>
+
+          <Route path="/wheels">
+            <WheelsHeader />
+            <WheelsInspection />
+          </Route>
+
+          <Route path="windshield">
+            <WindshieldHeader />
+            <WindshieldInspection />
+          </Route>
+
+          <Route path="/wipers">
+            <WipersHeader />
+            <WipersInspection />
+          </Route>
+
+          <Route path="/seats">
+            <SeatsHeader />
+            <SeatsInspection />
+          </Route>
+        </Router>
       </div>
     );
   }
