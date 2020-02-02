@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
 import Header from "./Header";
+import Navbar from "./components/navbar/Navbar";
 import FormHeader from "./components/form/FormHeader";
 import FormTruckComponents from "./components/form/FormTruckComponents";
 //import LoginControl from "./components/login/LoginControl";
@@ -42,23 +43,30 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Route path="/">
+          <Route exact path="/">
+            <Navbar />
             <Header />
             <FormHeader />
             <FormTruckComponents />
           </Route>
 
           <Route path="/brakes">
+            <Navbar />
+            <Header />
             <BrakesHeader />
             <BrakesInspection />
           </Route>
 
           <Route path="/coupling">
+            <Navbar />
+            <Header />
             <CouplingHeader />
             <CouplingInspection />
           </Route>
 
           <Route path="/exhaust">
+            <Navbar />
+            <Header />
             <ExhaustHeader />
             <ExhaustInspection />
           </Route>
