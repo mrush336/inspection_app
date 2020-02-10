@@ -72,56 +72,78 @@ class App extends Component {
           </Route>
 
           <Route path="/fuel">
+            <Navbar />
+            <Header />
             <FuelHeader />
             <FuelInspection />
           </Route>
 
           <Route path="/lighting">
+            <Navbar />
+            <Header />
             <LightingHeader />
             <LightingInspection />
           </Route>
 
           <Route path="/loading">
+            <Navbar />
+            <Header />
             <LoadingHeader />
             <LoadingInspection />
           </Route>
 
           <Route path="/steering">
+            <Navbar />
+            <Header />
             <SteeringHeader />
             <SteeringInspection />
           </Route>
 
           <Route path="/suspension">
+            <Navbar />
+            <Header />
             <SuspensionHeader />
             <SuspensionInspection />
           </Route>
 
           <Route path="/frame">
+            <Navbar />
+            <Header />
             <FrameHeader />
             <FrameInspection />
           </Route>
 
           <Route path="/tires">
+            <Navbar />
+            <Header />
             <TiresHeader />
             <TiresInspection />
           </Route>
 
           <Route path="/wheels">
+            <Navbar />
+            <Header />
             <WheelsHeader />
             <WheelsInspection />
           </Route>
 
-          <Route path="windshield">
+          <Route path="/windshield">
+            <Navbar />
+            <Header />
             <WindshieldHeader />
             <WindshieldInspection />
           </Route>
 
           <Route path="/wipers">
+            <Navbar />
+            <Header />
             <WipersHeader />
             <WipersInspection />
           </Route>
 
           <Route path="/seats">
+            <Navbar />
+            <Header />
             <SeatsHeader />
             <SeatsInspection />
           </Route>

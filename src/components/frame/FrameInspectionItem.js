@@ -12,6 +12,7 @@ export class FrameInspectionItem extends Component {
         backgroundColor: "#00ff00"
       }
     });
+    this.props.item.pass = true;
   };
   handleClickFail = () => {
     this.setState({
@@ -19,6 +20,7 @@ export class FrameInspectionItem extends Component {
         backgroundColor: "#ff0000"
       }
     });
+    this.props.item.pass = false;
   };
   handleClickNA = () => {
     this.setState({
@@ -26,6 +28,7 @@ export class FrameInspectionItem extends Component {
         backgroundColor: "#ffff00"
       }
     });
+    this.props.item.pass = undefined;
   };
   render() {
     const { divStyle } = this.state;
