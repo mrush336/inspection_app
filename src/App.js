@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-
 import { BrowserRouter as Router, Route } from "react-router-dom";
+
+//import * as firebase from "firebase/app";
+//import "firebase/analytics";
+//import "firebase/firestore";
 
 import "./App.css";
 
@@ -37,6 +40,7 @@ import WipersHeader from "./components/wipers/WipersHeader";
 import WipersInspection from "./components/wipers/WipersInspection";
 import SeatsHeader from "./components/seats/SeatsHeader";
 import SeatsInspection from "./components/seats/SeatsInspection";
+import Footer from "./components/footer/Footer";
 
 class App extends Component {
   render() {
@@ -55,6 +59,7 @@ class App extends Component {
             <Header />
             <BrakesHeader />
             <BrakesInspection />
+            <Footer />
           </Route>
 
           <Route path="/coupling">
