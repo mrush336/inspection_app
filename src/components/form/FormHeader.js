@@ -7,7 +7,7 @@ export class FormHeader extends Component {
     console.log(this.props.state);
     firebase
       .database()
-      .ref("/inspection/" + uuidv4())
+      .ref("inspections/" + uuidv4())
       .set({
         motor_carrier_operator: this.props.state.motor_carrier_operator,
         address: this.props.state.address,
@@ -15,7 +15,8 @@ export class FormHeader extends Component {
         date: this.props.state.date,
         inspectors_name: this.props.state.inspectors_name,
         vin: this.props.state.vin
-      });
+      })
+      .then(console.log(Response));
   };
   render() {
     return (
