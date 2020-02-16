@@ -8,7 +8,7 @@ export default function Footer() {
       <Link to="/" style={footerLinkStyle}>
         Back
       </Link>{" "}
-      <Link to="/coupling" style={footerLinkStyle}>
+      <Link to="/brakes" style={footerLinkStyle}>
         Next
       </Link>
     </footer>

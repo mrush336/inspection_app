@@ -5,6 +5,7 @@ export class FormHeader extends Component {
   handleClickSubmit = e => {
     e.preventDefault();
     console.log(this.props.state);
+
     firebase
       .database()
       .ref("inspections/" + uuidv4())
@@ -16,7 +17,7 @@ export class FormHeader extends Component {
         inspectors_name: this.props.state.inspectors_name,
         vin: this.props.state.vin
       })
-      .then(console.log(Response));
+      .then(window.alert("Data sent to the server!"));
   };
   render() {
     return (
@@ -30,7 +31,8 @@ export class FormHeader extends Component {
 
 const headerStyle = {
   background: "#99ccff",
-  color: "#ff0000"
+  color: "#ff0000",
+  margin: "1rem 0"
 };
 
 export default FormHeader;

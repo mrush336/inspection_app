@@ -34,10 +34,7 @@ export class LoadingInspectionItem extends Component {
     const { divStyle } = this.state;
     return (
       <div>
-        <h2 style={divStyle}>
-          {" "}
-          Inspect {this.props.item.name} for any defects:{" "}
-        </h2>
+        <h2 style={divStyle}> Inspect {this.props.item.name} : </h2>
         <button onClick={this.handleClickPass} style={buttonStylePass}>
           -PASS-
         </button>{" "}
@@ -55,19 +52,19 @@ export class LoadingInspectionItem extends Component {
 const buttonStylePass = {
   backgroundColor: "#00ff00",
   borderRadius: "20px",
-  fontSize: "20px"
+  fontSize: "1.25rem"
 };
 
 const buttonStyleFail = {
   backgroundColor: "#ff0000",
   borderRadius: "20px",
-  fontSize: "20px"
+  fontSize: "1.25rem"
 };
 
 const buttonStyleNA = {
   backgroundColor: "#ffff00",
   borderRadius: "20px",
-  fontSize: "20px"
+  fontSize: "1.25rem"
 };
 
 export default LoadingInspectionItem;

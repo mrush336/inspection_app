@@ -4,9 +4,13 @@ import ExhaustInspectionItem from "./ExhaustInspectionItem";
 export class ExhaustInspection extends Component {
   state = {
     exhaust: [
-      { id: 20, name: "Leaking Forward or Below Cabin", pass: false },
-      { id: 21, name: "Bus Exhaust System Leaking", pass: false },
-      { id: 22, name: "Exhaust Burning or Charing", pass: false }
+      { id: 20, name: "Leaking Forward Or Below Cabin", pass: false },
+      { id: 21, name: "A Bus Exhaust System Leaking", pass: false },
+      {
+        id: 22,
+        name: "Burning Or Charing Of Any Combustible Material",
+        pass: false
+      }
     ]
   };
   render() {

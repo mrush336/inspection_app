@@ -3,7 +3,9 @@ import WindshieldInspectionItem from "./WindshieldInspectionItem";
 
 export class WindshieldInspection extends Component {
   state = {
-    windshield: [{ id: 53, name: "Vision Reducing Matter", pass: false }]
+    windshield: [
+      { id: 53, name: "For Any Vision Reducing Matter", pass: false }
+    ]
   };
   render() {
     return this.state.windshield.map(item => (

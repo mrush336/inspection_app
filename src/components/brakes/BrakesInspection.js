@@ -6,8 +6,8 @@ export class BrakesInspection extends Component {
     brakes: [
       { id: 1, name: "Service Brakes", pass: false },
       { id: 2, name: "Parking Brakes", pass: false },
-      { id: 3, name: "Brake Drums or Rotors", pass: false },
-      { id: 4, name: "Brake Hose", pass: false },
+      { id: 3, name: "Brake Drums Or Rotors", pass: false },
+      { id: 4, name: "Brake Hoses", pass: false },
       { id: 5, name: "Brake Tubing", pass: false },
       { id: 6, name: "Low Pressure Warning Device", pass: false },
       { id: 7, name: "Tractor Protection Valve", pass: false },

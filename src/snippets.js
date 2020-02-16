@@ -1,3 +1,23 @@
+<LinkButton to="/coupling" style={buttonStyleContinue}>
+        CONTINUE
+      </LinkButton>{" "}
+      <LinkButton to="/" style={buttonStyleBack}>
+        GO-BACK
+      </LinkButton>
+
+const buttonStyleContinue = {
+  backgroundColor: "#00ff00",
+  borderRadius: "20px",
+  fontSize: "1.25rem"
+};
+
+const buttonStyleBack = {
+  backgroundColor: "#ff0000",
+  borderRadius: "20px",
+  fontSize: "20px"
+};
+
+
 render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (

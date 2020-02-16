@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <footer style={footerStyle} className={"footer"}>
       <h2>When complete click Next or Back</h2>
-      <Link to="/" style={footerLinkStyle}>
+      <Link to="/brakes" style={footerLinkStyle}>
         Back
       </Link>{" "}
-      <Link to="/coupling" style={footerLinkStyle}>
+      <Link to="/exhaust" style={footerLinkStyle}>
         Next
       </Link>
     </footer>
