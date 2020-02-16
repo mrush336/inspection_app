@@ -1,14 +1,35 @@
-import React from "react";
-
-export default function FormHeader() {
-  return (
-    <header style={headerStyle}>
-      <h2>Enter the required information below</h2>
-    </header>
-  );
+import React, { Component } from "react";
+import firebase from "../firebase.js";
+import uuidv4 from "uuid";
+export class FormHeader extends Component {
+  handleClickSubmit = e => {
+    e.preventDefault();
+    console.log(this.props.state);
+    firebase
+      .database()
+      .ref("/inspection/" + uuidv4())
+      .set({
+        motor_carrier_operator: this.props.state.motor_carrier_operator,
+        address: this.props.state.address,
+        city_state_zip: this.props.state.city_state_zip,
+        date: this.props.state.date,
+        inspectors_name: this.props.state.inspectors_name,
+        vin: this.props.state.vin
+      });
+  };
+  render() {
+    return (
+      <header style={headerStyle}>
+        <h2>Enter the required information below and click submit</h2>
+        <button onClick={this.handleClickSubmit}>SUBMIT</button>
+      </header>
+    );
+  }
 }
 
 const headerStyle = {
   background: "#99ccff",
   color: "#ff0000"
 };
+
+export default FormHeader;

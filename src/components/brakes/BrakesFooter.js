@@ -3,21 +3,21 @@ import LinkButton from "../LinkButton";
 
 export default function Footer() {
   return (
-    <footer style={footerStyle}>
-      <h2>
-        After inspecting the components above click "continue" or "go-back"
-      </h2>
-      <LinkButton to="/" style={buttonStyleContinue}>
-        continue
+    <footer style={footerStyle} className={"footer"}>
+      <h2>When complete click continue or go-back</h2>
+      <LinkButton to="/coupling" style={buttonStyleContinue}>
+        CONTINUE
       </LinkButton>{" "}
-      <LinkButton style={buttonStyleBack}>go-back</LinkButton>
+      <LinkButton to="/" style={buttonStyleBack}>
+        GO-BACK
+      </LinkButton>
     </footer>
   );
 }
 
 const footerStyle = {
   background: "#99ccff",
-  color: "#000066"
+  color: "#000000"
 };
 
 const buttonStyleContinue = {

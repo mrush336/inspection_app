@@ -21,6 +21,12 @@ button {
   /*border-radius: 4px;*/
 }
 
+.footer {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 h2 {
   width: 60%;
   margin-left: 20%;

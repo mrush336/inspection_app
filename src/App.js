@@ -9,11 +9,12 @@ import "./App.css";
 
 import Header from "./Header";
 import Navbar from "./components/navbar/Navbar";
-import FormHeader from "./components/form/FormHeader";
+//import FormHeader from "./components/form/FormHeader";
 import FormTruckComponents from "./components/form/FormTruckComponents";
 //import LoginControl from "./components/login/LoginControl";
 import BrakesHeader from "./components/brakes/BrakesHeader";
 import BrakesInspection from "./components/brakes/BrakesInspection";
+import BrakesFooter from "./components/brakes/BrakesFooter";
 import CouplingHeader from "./components/coupling/CouplingHeader";
 import CouplingInspection from "./components/coupling/CouplingInspection";
 import ExhaustHeader from "./components/exhaust/ExhaustHeader";
@@ -40,7 +41,7 @@ import WipersHeader from "./components/wipers/WipersHeader";
 import WipersInspection from "./components/wipers/WipersInspection";
 import SeatsHeader from "./components/seats/SeatsHeader";
 import SeatsInspection from "./components/seats/SeatsInspection";
-import Footer from "./components/footer/Footer";
+//import Footer from "./components/footer/Footer";
 
 class App extends Component {
   render() {
@@ -50,7 +51,6 @@ class App extends Component {
           <Route exact path="/">
             <Navbar />
             <Header />
-            <FormHeader />
             <FormTruckComponents />
           </Route>
 
@@ -59,7 +59,7 @@ class App extends Component {
             <Header />
             <BrakesHeader />
             <BrakesInspection />
-            <Footer />
+            <BrakesFooter />
           </Route>
 
           <Route path="/coupling">

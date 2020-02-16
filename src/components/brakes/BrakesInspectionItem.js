@@ -45,7 +45,7 @@ export class BrakesInspectionItem extends Component {
           Not Applicable
         </button>
         <button onClick={this.handleClickFail} style={buttonStyleFail}>
-          x-Fail-x
+          x-FAIL-x
         </button>
       </div>
     );
