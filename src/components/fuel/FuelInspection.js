@@ -6,7 +6,7 @@ export class FuelInspection extends Component {
     fuel: [
       { id: 23, name: "For Visible Leaks", pass: false },
       { id: 24, name: "Filler Cap Is Not Missing", pass: false },
-      { id: 25, name: "Tanks Is Securely Attached", pass: false }
+      { id: 25, name: "Tanks Are Securely Attached", pass: false }
     ]
   };
   render() {

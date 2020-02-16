@@ -11,7 +11,7 @@ function Header() {
 
 const mainHeaderStyle = {
   background: "#99ccff",
-  fontSize: "24px",
+  fontSize: "1.5rem",
   color: "#000066",
   textShadow: "2px 2px #ff0000"
 };
