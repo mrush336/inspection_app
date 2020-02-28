@@ -3,7 +3,7 @@ import WipersInspectionItem from "./WipersInspectionItem";
 
 export class WipersInspection extends Component {
   state = {
-    wipers: [{ id: 54, name: "Inoperative Wiper", pass: false }]
+    wipers: [{ id: 54, name: "For An Inoperative Wiper", pass: false }]
   };
   render() {
     return this.state.wipers.map(item => (

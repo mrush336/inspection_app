@@ -5,8 +5,8 @@ export class TiresInspection extends Component {
   state = {
     tires: [
       { id: 46, name: "Steering Tires", pass: false },
-      { id: 47, name: "Other Tires", pass: false },
-      { id: 48, name: "Speed Restricted Tires", pass: false }
+      { id: 47, name: "All Other Tires", pass: false },
+      { id: 48, name: "Speed Restricted Tires Not Installed", pass: false }
     ]
   };
   render() {

@@ -4,9 +4,13 @@ import LoadingInspectionItem from "./LoadingInspectionItem";
 export class LoadingInspection extends Component {
   state = {
     loading: [
-      { id: 27, name: "Load/Dunnage Falling", pass: false },
-      { id: 28, name: "Cargo Shifting", pass: false },
-      { id: 29, name: "Container Securement", pass: false }
+      {
+        id: 27,
+        name: "Load Or Dunnage Will Not Fall Onto Roadway",
+        pass: false
+      },
+      { id: 28, name: "Cargo Shifting Protection", pass: false },
+      { id: 29, name: "Container Securement Devices", pass: false }
     ]
   };
   render() {

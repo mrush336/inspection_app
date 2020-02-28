@@ -6,7 +6,7 @@ export class FrameInspection extends Component {
     frame: [
       { id: 43, name: "Frame Members", pass: false },
       { id: 44, name: "Tire and Wheel Clearance", pass: false },
-      { id: 45, name: "Sliding Subframes", pass: false }
+      { id: 45, name: "Adjustable Axles And Sliding Subframes", pass: false }
     ]
   };
   render() {
