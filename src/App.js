@@ -47,8 +47,111 @@ import WipersFooter from "./components/wipers/WipersFooter";
 import SeatsHeader from "./components/seats/SeatsHeader";
 import SeatsInspection from "./components/seats/SeatsInspection";
 import SeatsFooter from "./components/seats/SeatsFooter";
+import Summary from "./components/summary/Summary";
+import SummaryFooter from "./components/summary/SummaryFooter";
 
 class App extends Component {
+  state = {
+    brakes: [
+      { id: 1, name: "Service Brakes", pass: "Incomplete" },
+      { id: 2, name: "Parking Brakes", pass: "Incomplete" },
+      { id: 3, name: "Brake Drums Or Rotors", pass: "Incomplete" },
+      { id: 4, name: "Brake Hoses", pass: "Incomplete" },
+      { id: 5, name: "Brake Tubing", pass: "Incomplete" },
+      { id: 6, name: "Low Pressure Warning Device", pass: "Incomplete" },
+      { id: 7, name: "Tractor Protection Valve", pass: "Incomplete" },
+      { id: 8, name: "Air Compressor", pass: "Incomplete" },
+      { id: 9, name: "Electric Brakes", pass: "Incomplete" },
+      { id: 10, name: "Hydraulic Brakes", pass: "Incomplete" },
+      { id: 11, name: "Vacuum Brakes", pass: "Incomplete" },
+      { id: 12, name: "Antilock Brakes", pass: "Incomplete" },
+      { id: 13, name: "Automatic Brake Adjusters", pass: "Incomplete" }
+    ],
+    coupling: [
+      { id: 14, name: "Fifth Wheels", pass: "Incomplete" },
+      { id: 15, name: "Pintle Hooks", pass: "Incomplete" },
+      { id: 16, name: "Drawbar Or Towbar Eye", pass: "Incomplete" },
+      { id: 17, name: "Drawbar Or Towbar Tongue", pass: "Incomplete" },
+      { id: 18, name: "Safety Devices", pass: "Incomplete" },
+      { id: 19, name: "Saddle Mounts", pass: "Incomplete" }
+    ],
+    exhaust: [
+      { id: 20, name: "Leaking Forward Or Below Cabin", pass: "Incomplete" },
+      { id: 21, name: "A Bus Exhaust System Leaking", pass: "Incomplete" },
+      {
+        id: 22,
+        name: "Burning Or Charing Of Any Combustible Material",
+        pass: "Incomplete"
+      }
+    ],
+    fuel: [
+      { id: 23, name: "For Visible Leaks", pass: "Incomplete" },
+      { id: 24, name: "Filler Cap Is Not Missing", pass: "Incomplete" },
+      { id: 25, name: "Tanks Are Securely Attached", pass: "Incomplete" }
+    ],
+    lighting: [
+      {
+        id: 26,
+        name: "All Lighting Devices And Reflectors",
+        pass: "Incomplete"
+      }
+    ],
+    loading: [
+      {
+        id: 27,
+        name: "Load Or Dunnage Will Not Fall Onto Roadway",
+        pass: "Incomplete"
+      },
+      { id: 28, name: "Cargo Shifting Protection", pass: "Incomplete" },
+      { id: 29, name: "Container Securement Devices", pass: "Incomplete" }
+    ],
+    steering: [
+      { id: 30, name: "Steering Wheel Freeplay", pass: "Incomplete" },
+      { id: 31, name: "Steering Column", pass: "Incomplete" },
+      { id: 32, name: "Axle Beam And Components", pass: "Incomplete" },
+      { id: 33, name: "Steering Gear Box", pass: "Incomplete" },
+      { id: 34, name: "Pitman Arm", pass: "Incomplete" },
+      { id: 35, name: "Power Steering System", pass: "Incomplete" },
+      { id: 36, name: "Ball Joints", pass: "Incomplete" },
+      { id: 37, name: "Tie Rod And Drag Link", pass: "Incomplete" },
+      { id: 38, name: "Nuts", pass: "Incomplete" },
+      { id: 39, name: "Steering System", pass: "Incomplete" }
+    ],
+    suspension: [
+      { id: 40, name: "U-Bolts And Spring Hangers", pass: "Incomplete" },
+      { id: 41, name: "Spring Assembly", pass: "Incomplete" },
+      { id: 42, name: "Torque And Radius Rods", pass: "Incomplete" }
+    ],
+    frame: [
+      { id: 43, name: "Frame Members", pass: "Incomplete" },
+      { id: 44, name: "Tire and Wheel Clearance", pass: "Incomplete" },
+      {
+        id: 45,
+        name: "Adjustable Axles And Sliding Subframes",
+        pass: "Incomplete"
+      }
+    ],
+    tires: [
+      { id: 46, name: "Steering Tires", pass: "Incomplete" },
+      { id: 47, name: "All Other Tires", pass: "Incomplete" },
+      {
+        id: 48,
+        name: "Speed Restricted Tires Not Installed",
+        pass: "Incomplete"
+      }
+    ],
+    wheels: [
+      { id: 49, name: "Lock Or Side Ring", pass: "Incomplete" },
+      { id: 50, name: "Wheels And Rims", pass: "Incomplete" },
+      { id: 51, name: "Fasteners And Lug Nuts", pass: "Incomplete" },
+      { id: 52, name: "For Any Welds", pass: "Incomplete" }
+    ],
+    windshield: [
+      { id: 53, name: "For Any Vision Reducing Matter", pass: "Incomplete" }
+    ],
+    wipers: [{ id: 54, name: "For An Inoperative Wiper", pass: "Incomplete" }],
+    seats: [{ id: 55, name: "All Seats Are Secured", pass: "Incomplete" }]
+  };
   render() {
     return (
       <div className="App">
@@ -64,7 +167,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <BrakesHeader />
-            <BrakesInspection />
+            <BrakesInspection brakes={this.state.brakes} />
             <BrakesFooter />
           </Route>
 
@@ -72,7 +175,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <CouplingHeader />
-            <CouplingInspection />
+            <CouplingInspection coupling={this.state.coupling} />
             <CouplingFooter />
           </Route>
 
@@ -80,7 +183,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <ExhaustHeader />
-            <ExhaustInspection />
+            <ExhaustInspection exhaust={this.state.exhaust} />
             <ExhaustFooter />
           </Route>
 
@@ -88,7 +191,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <FuelHeader />
-            <FuelInspection />
+            <FuelInspection fuel={this.state.fuel} />
             <FuelFooter />
           </Route>
 
@@ -96,7 +199,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <LightingHeader />
-            <LightingInspection />
+            <LightingInspection lighting={this.state.lighting} />
             <LightingFooter />
           </Route>
 
@@ -104,7 +207,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <LoadingHeader />
-            <LoadingInspection />
+            <LoadingInspection loading={this.state.loading} />
             <LoadingFooter />
           </Route>
 
@@ -112,7 +215,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <SteeringHeader />
-            <SteeringInspection />
+            <SteeringInspection steering={this.state.steering} />
             <SteeringFooter />
           </Route>
 
@@ -120,7 +223,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <SuspensionHeader />
-            <SuspensionInspection />
+            <SuspensionInspection suspension={this.state.suspension} />
             <SuspensionFooter />
           </Route>
 
@@ -128,7 +231,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <FrameHeader />
-            <FrameInspection />
+            <FrameInspection frame={this.state.frame} />
             <FrameFooter />
           </Route>
 
@@ -136,7 +239,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <TiresHeader />
-            <TiresInspection />
+            <TiresInspection tires={this.state.tires} />
             <TiresFooter />
           </Route>
 
@@ -144,7 +247,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <WheelsHeader />
-            <WheelsInspection />
+            <WheelsInspection wheels={this.state.wheels} />
             <WheelsFooter />
           </Route>
 
@@ -152,7 +255,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <WindshieldHeader />
-            <WindshieldInspection />
+            <WindshieldInspection windshield={this.state.windshield} />
             <WindshieldFooter />
           </Route>
 
@@ -160,7 +263,7 @@ class App extends Component {
             <Navbar />
             <Header />
             <WipersHeader />
-            <WipersInspection />
+            <WipersInspection wipers={this.state.wipers} />
             <WipersFooter />
           </Route>
 
@@ -168,8 +271,15 @@ class App extends Component {
             <Navbar />
             <Header />
             <SeatsHeader />
-            <SeatsInspection />
+            <SeatsInspection seats={this.state.seats} />
             <SeatsFooter />
+          </Route>
+
+          <Route path="/summary">
+            <Navbar />
+            <Header />
+            <Summary items={this.state} />
+            <SummaryFooter />
           </Route>
         </Router>
       </div>

@@ -2,13 +2,8 @@ import React, { Component } from "react";
 import LightingInspectionItem from "./LightingInspectionItem";
 
 export class LightingInspection extends Component {
-  state = {
-    lighting: [
-      { id: 26, name: "All Lighting Devices And Reflectors", pass: false }
-    ]
-  };
   render() {
-    return this.state.lighting.map(item => (
+    return this.props.lighting.map(item => (
       <LightingInspectionItem item={item} key={item.id} />
     ));
   }

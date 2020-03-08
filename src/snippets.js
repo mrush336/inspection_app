@@ -158,3 +158,15 @@ const insertDocuments = function(db, callback) {
     callback(result);
   });
 }
+
+
+import React, { Component } from "react";
+import SummaryItem from "./SummaryItem";
+
+export default class Summary extends Component {
+  render() {
+    return this.props.items.brakes.map(item => (
+      <SummaryItem item={item} key={item.id} />
+    ));
+  }
+}

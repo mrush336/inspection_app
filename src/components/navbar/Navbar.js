@@ -47,6 +47,9 @@ export default function Navbar() {
       <Link to="/seats" style={linkStyle}>
         Seats
       </Link>{" "}
+      <Link to="/summary" style={linkStyle}>
+        Summary
+      </Link>{" "}
     </header>
   );
 }
