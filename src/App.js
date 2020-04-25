@@ -144,7 +144,7 @@ class App extends Component {
       { id: 49, name: "Lock Or Side Ring", pass: "Incomplete" },
       { id: 50, name: "Wheels And Rims", pass: "Incomplete" },
       { id: 51, name: "Fasteners And Lug Nuts", pass: "Incomplete" },
-      { id: 52, name: "For Any Welds", pass: "Incomplete" }
+      { id: 52, name: "Any Welds", pass: "Incomplete" }
     ],
     windshield: [
       { id: 53, name: "For Any Vision Reducing Matter", pass: "Incomplete" }

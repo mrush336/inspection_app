@@ -12,7 +12,7 @@ export class FuelInspectionItem extends Component {
         backgroundColor: "#00ff00"
       }
     });
-    this.props.item.pass = true;
+    this.props.item.pass = "Passed";
   };
   handleClickFail = () => {
     this.setState({
@@ -20,7 +20,7 @@ export class FuelInspectionItem extends Component {
         backgroundColor: "#ff0000"
       }
     });
-    this.props.item.pass = false;
+    this.props.item.pass = "Failed";
   };
   handleClickNA = () => {
     this.setState({
@@ -28,7 +28,7 @@ export class FuelInspectionItem extends Component {
         backgroundColor: "#ffff00"
       }
     });
-    this.props.item.pass = undefined;
+    this.props.item.pass = "Not Applicable";
   };
   render() {
     const { divStyle } = this.state;
