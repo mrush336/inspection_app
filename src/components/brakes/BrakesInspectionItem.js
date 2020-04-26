@@ -3,30 +3,30 @@ import React, { Component } from "react";
 export class BrakesInspectionItem extends Component {
   state = {
     divStyle: {
-      backgroundColor: "#ffffff"
-    }
+      backgroundColor: "#ffffff",
+    },
   };
   handleClickPass = () => {
     this.setState({
       divStyle: {
-        backgroundColor: "#00ff00"
-      }
+        backgroundColor: "#00ff00",
+      },
     });
     this.props.item.pass = "Passed";
   };
   handleClickFail = () => {
     this.setState({
       divStyle: {
-        backgroundColor: "#ff0000"
-      }
+        backgroundColor: "#ff0000",
+      },
     });
     this.props.item.pass = "Failed";
   };
   handleClickNA = () => {
     this.setState({
       divStyle: {
-        backgroundColor: "#ffff00"
-      }
+        backgroundColor: "#ffff00",
+      },
     });
     this.props.item.pass = "Not Applicable";
   };
@@ -52,19 +52,19 @@ export class BrakesInspectionItem extends Component {
 const buttonStylePass = {
   backgroundColor: "#00ff00",
   borderRadius: "20px",
-  fontSize: "1.25rem"
+  fontSize: "1.25rem",
 };
 
 const buttonStyleFail = {
   backgroundColor: "#ff0000",
   borderRadius: "20px",
-  fontSize: "1.25rem"
+  fontSize: "1.25rem",
 };
 
 const buttonStyleNA = {
   backgroundColor: "#ffff00",
   borderRadius: "20px",
-  fontSize: "1.25rem"
+  fontSize: "1.25rem",
 };
 
 export default BrakesInspectionItem;

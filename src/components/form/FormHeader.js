@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import firebase from "../firebase.js";
 import uuidv4 from "uuid";
 export class FormHeader extends Component {
-  handleClickSubmit = e => {
+  handleClickSubmit = (e) => {
     e.preventDefault();
     console.log(this.props.state);
 
@@ -15,7 +15,7 @@ export class FormHeader extends Component {
         city_state_zip: this.props.state.city_state_zip,
         date: this.props.state.date,
         inspectors_name: this.props.state.inspectors_name,
-        vin: this.props.state.vin
+        vin: this.props.state.vin,
       })
       .then(window.alert("Data sent to the server!"));
   };
@@ -32,7 +32,7 @@ export class FormHeader extends Component {
 const headerStyle = {
   background: "#99ccff",
   color: "#ff0000",
-  margin: "1rem 0"
+  margin: "1rem 0",
 };
 
 export default FormHeader;
